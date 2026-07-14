@@ -96,7 +96,7 @@ export default function Camps() {
       <section className="py-16 bg-bg-light">
         <div className="container mx-auto px-4">
           <h2 className="font-serif text-3xl font-bold text-navy mb-4 text-center">
-            QUELQUES IMAGES DU CAMP 2024
+            Quelques images de nos camps
           </h2>
           <p className="text-text-light text-center mb-12">Cliquez sur les images pour les agrandir.</p>
           
