@@ -19,8 +19,30 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Flambeau du Réveil - Ministère d'évangélisation et de discipolat",
-  description: "Ministère d'études biblique d'évangélisation et de prière parmi les enfants et les jeunes à Lomé, Togo.",
+  title: "Flambeau du Réveil",
+  description: "Flambeau du Réveil - Une plateforme dédiée à la diffusion de la parole de Dieu, des enseignements et des ressources spirituelles.",
+  metadataBase: new URL("https://flambeaureveil.vercel.app"),
+  openGraph: {
+    title: "Flambeau du Réveil",
+    description: "Flambeau du Réveil - Une plateforme dédiée à la diffusion de la parole de Dieu, des enseignements et des ressources spirituelles.",
+    type: "website",
+    locale: "fr_FR",
+    url: "https://flambeaureveil.vercel.app",
+    images: [
+      {
+        url: "https://flambeaureveil.vercel.app/images/home/hero-flambeau.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Flambeau du Réveil",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Flambeau du Réveil",
+    description: "Flambeau du Réveil - Une plateforme dédiée à la diffusion de la parole de Dieu, des enseignements et des ressources spirituelles.",
+    images: ["https://flambeaureveil.vercel.app/images/home/hero-flambeau.jpg"],
+  },
 };
 
 export default function RootLayout({
