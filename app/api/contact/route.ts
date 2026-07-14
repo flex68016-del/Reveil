@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   // Use environment variable or fallback for local development
-  const apiKey = process.env.RESEND_API_KEY || 're_V3bAzZwV_2eAem8ocvGz1BjRywN5wYgi3';
+  const apiKey = process.env.RESEND_API_KEY || 're_cExKK3Pq_MzEDZNxLdYjBUzpuZeciGYPX';
   
   const resend = new Resend(apiKey);
   try {
