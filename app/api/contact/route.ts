@@ -1,9 +1,16 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
+  // Check if API key is configured
+  if (!process.env.RESEND_API_KEY) {
+    return NextResponse.json(
+      { error: 'Configuration du serveur incomplète. Veuillez contacter l\'administrateur.' },
+      { status: 500 }
+    );
+  }
+
+  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const body = await request.json();
     const { firstName, lastName, email, phone, message } = body;
