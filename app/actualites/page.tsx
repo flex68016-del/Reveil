@@ -5,7 +5,7 @@ const actualites = [
     title: 'WINTERFEST TOGO 2026 — Debout pour Jésus',
     description: 'Trois jours de louange, de danse et de communion. 20–22 août 2026, Palais des Congrès de Lomé. Entrée gratuite.',
     image: '/images/actualites/winterfest-2026.jpg',
-    link: 'https://winterfesttogo.netlify.app/'
+    link: 'https://winterfesttogo.org/'
   }
 ];
 
